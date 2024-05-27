@@ -16,78 +16,78 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\janak.raj\Desktop\furniture\NS.FAM.Web
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/janak.raj/Desktop/furniture/NS.FAM.Web/Views/LogIn/SignIn.cshtml]
+[C:/Users/janak.raj/Desktop/furniture/NS.FAM.WEB/Views/LogIn/SignIn.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9nSW5cU2lnbkluLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/janak.raj/Desktop/furniture/NS.FAM.Web/Views/Product/AddCategory.cshtml]
+[C:/Users/janak.raj/Desktop/furniture/NS.FAM.WEB/Views/Product/AddCategory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxBZGRDYXRlZ29yeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/janak.raj/Desktop/furniture/NS.FAM.Web/Views/Product/AddProduct.cshtml]
+[C:/Users/janak.raj/Desktop/furniture/NS.FAM.WEB/Views/Product/AddProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxBZGRQcm9kdWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/janak.raj/Desktop/furniture/NS.FAM.Web/Views/Product/AddSubCategory.cshtml]
+[C:/Users/janak.raj/Desktop/furniture/NS.FAM.WEB/Views/Product/AddSubCategory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxBZGRTdWJDYXRlZ29yeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/janak.raj/Desktop/furniture/NS.FAM.Web/Views/Product/EditProduct.cshtml]
+[C:/Users/janak.raj/Desktop/furniture/NS.FAM.WEB/Views/Product/EditProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxFZGl0UHJvZHVjdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/janak.raj/Desktop/furniture/NS.FAM.Web/Views/Product/Products.cshtml]
+[C:/Users/janak.raj/Desktop/furniture/NS.FAM.WEB/Views/Product/Products.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxQcm9kdWN0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/janak.raj/Desktop/furniture/NS.FAM.Web/Views/Product/UserCart.cshtml]
+[C:/Users/janak.raj/Desktop/furniture/NS.FAM.WEB/Views/Product/UserCart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxVc2VyQ2FydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/janak.raj/Desktop/furniture/NS.FAM.Web/Views/Product/UserProducts.cshtml]
+[C:/Users/janak.raj/Desktop/furniture/NS.FAM.WEB/Views/Product/UserProducts.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxVc2VyUHJvZHVjdHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/janak.raj/Desktop/furniture/NS.FAM.Web/Views/Shared/Error.cshtml]
+[C:/Users/janak.raj/Desktop/furniture/NS.FAM.WEB/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/janak.raj/Desktop/furniture/NS.FAM.Web/Views/Shared/_AvailableProducts.cshtml]
+[C:/Users/janak.raj/Desktop/furniture/NS.FAM.WEB/Views/Shared/_AvailableProducts.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BdmFpbGFibGVQcm9kdWN0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/janak.raj/Desktop/furniture/NS.FAM.Web/Views/Shared/_Layout1.cshtml]
+[C:/Users/janak.raj/Desktop/furniture/NS.FAM.WEB/Views/Shared/_Layout1.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQxLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/janak.raj/Desktop/furniture/NS.FAM.Web/Views/Shared/_LayoutAddUser.cshtml]
+[C:/Users/janak.raj/Desktop/furniture/NS.FAM.WEB/Views/Shared/_LayoutAddUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBZGRVc2VyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/janak.raj/Desktop/furniture/NS.FAM.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/janak.raj/Desktop/furniture/NS.FAM.WEB/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/janak.raj/Desktop/furniture/NS.FAM.Web/Views/User/Profile.cshtml]
+[C:/Users/janak.raj/Desktop/furniture/NS.FAM.WEB/Views/User/Profile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxQcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/janak.raj/Desktop/furniture/NS.FAM.Web/Views/User/SignUp.cshtml]
+[C:/Users/janak.raj/Desktop/furniture/NS.FAM.WEB/Views/User/SignUp.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxTaWduVXAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/janak.raj/Desktop/furniture/NS.FAM.Web/Views/User/Users.cshtml]
+[C:/Users/janak.raj/Desktop/furniture/NS.FAM.WEB/Views/User/Users.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVc2Vycy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/janak.raj/Desktop/furniture/NS.FAM.Web/Views/_ViewImports.cshtml]
+[C:/Users/janak.raj/Desktop/furniture/NS.FAM.WEB/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/janak.raj/Desktop/furniture/NS.FAM.Web/Views/_ViewStart.cshtml]
+[C:/Users/janak.raj/Desktop/furniture/NS.FAM.WEB/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/janak.raj/Desktop/furniture/NS.FAM.Web/Views/Shared/_Layout.cshtml]
+[C:/Users/janak.raj/Desktop/furniture/NS.FAM.WEB/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-cg0fve64js

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "17CDEMCsEypspO8RgXuqdAWG2K3OwWWAr8eTD+U8U7k=",
+  "Hash": "mv+9EUr5fVFdFBv49CPo+nbdjg23WcOTqsgJV3CCEtg=",
   "Source": "NS.FAM.Web",
   "BasePath": "_content/NS.FAM.Web",
   "Mode": "Default",
@@ -1188,6 +1188,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\UploadProduct\\sofa4.webp"
+    },
+    {
+      "Identity": "C:\\Users\\janak.raj\\Desktop\\furniture\\NS.FAM.WEB\\wwwroot\\Uploads\\bed2.jpg",
+      "SourceId": "NS.FAM.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\janak.raj\\Desktop\\furniture\\NS.FAM.Web\\wwwroot\\",
+      "BasePath": "_content/NS.FAM.Web",
+      "RelativePath": "Uploads/bed2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\bed2.jpg"
     },
     {
       "Identity": "C:\\Users\\janak.raj\\Desktop\\furniture\\NS.FAM.WEB\\wwwroot\\Uploads\\Screenshot (182).png",
