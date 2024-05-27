@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {
+    "net6.0": {
       "Microsoft.CSharp/4.5.0": {
         "type": "package",
         "compile": {
@@ -753,7 +753,7 @@
       },
       "NS.FAM.Data/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
+        "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.29",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.29",
@@ -2028,7 +2028,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net7.0": [
+    "net6.0": [
       "NS.FAM.Data >= 1.0.0"
     ]
   },
@@ -2049,15 +2049,15 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net7.0"
+        "net6.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "projectReferences": {
             "C:\\Users\\janak.raj\\Desktop\\furniture\\NS.FAM.Data\\NS.FAM.Data.csproj": {
               "projectPath": "C:\\Users\\janak.raj\\Desktop\\furniture\\NS.FAM.Data\\NS.FAM.Data.csproj"
@@ -2072,8 +2072,8 @@
       }
     },
     "frameworks": {
-      "net7.0": {
-        "targetAlias": "net7.0",
+      "net6.0": {
+        "targetAlias": "net6.0",
         "imports": [
           "net461",
           "net462",

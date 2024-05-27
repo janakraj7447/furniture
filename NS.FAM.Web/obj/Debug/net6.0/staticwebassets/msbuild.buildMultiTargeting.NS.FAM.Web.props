@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\NS.FAM.Web.props" />
+</Project>

@@ -24,11 +24,8 @@ namespace NS.FAM.Repository
         Task<int> AddQuantity(int productId, long userId);
         Task<int> SubtractQuantity(int productId, long userId);
         Task<int> AddProduct(Products product);
-        Task<UpdateProductViewModel> GetById(int id);
-        
+        Task<UpdateProductViewModel> GetById(int id);      
         Task<int> EditProduct(Products product);
-
-
 
     }
 }
