@@ -1,0 +1,14 @@
+C:\Users\janak.raj\Desktop\furniture\NS.FAM.Data\bin\Debug\net7.0\NS.FAM.Data.deps.json
+C:\Users\janak.raj\Desktop\furniture\NS.FAM.Data\bin\Debug\net7.0\NS.FAM.Data.runtimeconfig.json
+C:\Users\janak.raj\Desktop\furniture\NS.FAM.Data\bin\Debug\net7.0\NS.FAM.Data.dll
+C:\Users\janak.raj\Desktop\furniture\NS.FAM.Data\bin\Debug\net7.0\NS.FAM.Data.pdb
+C:\Users\janak.raj\Desktop\furniture\NS.FAM.Data\obj\Debug\net7.0\NS.FAM.Data.csproj.AssemblyReference.cache
+C:\Users\janak.raj\Desktop\furniture\NS.FAM.Data\obj\Debug\net7.0\NS.FAM.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\janak.raj\Desktop\furniture\NS.FAM.Data\obj\Debug\net7.0\NS.FAM.Data.AssemblyInfoInputs.cache
+C:\Users\janak.raj\Desktop\furniture\NS.FAM.Data\obj\Debug\net7.0\NS.FAM.Data.AssemblyInfo.cs
+C:\Users\janak.raj\Desktop\furniture\NS.FAM.Data\obj\Debug\net7.0\NS.FAM.Data.csproj.CoreCompileInputs.cache
+C:\Users\janak.raj\Desktop\furniture\NS.FAM.Data\obj\Debug\net7.0\NS.FAM.Data.dll
+C:\Users\janak.raj\Desktop\furniture\NS.FAM.Data\obj\Debug\net7.0\refint\NS.FAM.Data.dll
+C:\Users\janak.raj\Desktop\furniture\NS.FAM.Data\obj\Debug\net7.0\NS.FAM.Data.pdb
+C:\Users\janak.raj\Desktop\furniture\NS.FAM.Data\obj\Debug\net7.0\NS.FAM.Data.genruntimeconfig.cache
+C:\Users\janak.raj\Desktop\furniture\NS.FAM.Data\obj\Debug\net7.0\ref\NS.FAM.Data.dll

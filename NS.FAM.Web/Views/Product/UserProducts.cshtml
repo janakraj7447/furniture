@@ -1,0 +1,181 @@
+﻿@using NS.FAM.Data.CustomEntities;
+@model IEnumerable<NS.FAM.Data.Entities.Products>
+@{
+    Layout = "_Layout1";
+}
+@{
+    var welcomeMessage = TempData["WelcomeMessage"] as string;
+}
+
+@if (!string.IsNullOrEmpty(welcomeMessage))
+{
+    <div id="welcomeMessage" class="alert alert-success alert-dismissible fade show">
+        @welcomeMessage
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+<style>
+    .container {
+        padding: 20px;
+        width: 100vw;
+    }
+
+    .products {
+        background-color: #fff;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .select-container {
+        margin: 10px 0;
+    }
+
+    select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #fff;
+    }
+
+    h2 {
+        font-size: 24px;
+        margin: 0;
+        color: #333;
+    }
+</style>
+
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th,
+    td {
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: black;
+        color: white;
+    }
+
+    tr:nth-child(even) {
+        background-color: #F2F2F2;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #black;
+        text-decoration: underline;
+    }
+}
+</style>
+
+<div class="anime"></div>
+
+<div class="col-md-12 m-2">
+    <div class="row">
+        @{
+            var category = Model.Where(x => x.Category.IsActive == true)
+            .Select(x => new { x.Category.Name, x.Category.Id })
+            .Distinct()
+            .ToList();
+        }
+        <div class="col-md-6">
+            <span class="m-2">Choose Category</span>
+            <select id="categoryDropdown" onchange="LoadMenu(this.value)">
+                <option value="0">--All---</option>
+                @foreach (var item in category)
+                {
+                    <option value="@item.Id">@item.Name</option>
+                }
+            </select>
+        </div>
+        <div class="col-md-6">
+            <span class="m-2">Choose Subcategory</span>
+            <select id="subcategoryDropdown">
+                <option>--Choose Category first---</option>
+            </select>
+        </div>
+    </div>
+    <br />
+</div>
+</div>
+
+<div id="dvUserdetails">
+</div>
+
+<script>
+    $(document).ready(function () {
+        setTimeout(function () {
+            $("#welcomeMessage").fadeOut();
+        }, 5000);
+    });
+</script>
+
+@section Scripts{
+    <script>
+        function LoadMenu(categoryId) {
+            $.ajax({
+                url: '/Product/Details?categoryId=' + categoryId,
+                type: 'GET',
+                dataType: 'html',
+                success: function (result) {
+                    $('#dvUserdetails').html(result);
+                }
+            });
+        }
+        $(function () {
+            LoadMenu(0);
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#categoryDropdown").change(function () {
+                $("#subcategoryDropdown").empty();
+                $.ajax({
+                    type: 'GET',
+                    url: '@Url.Action("GetSubCategory")',
+                    dataType: 'json',
+                    data: { id: $("#categoryDropdown").val() },
+                    success: function (subcategories) {
+                        $("#subcategoryDropdown").append('<option value="">Please Select SubCategory</option>');
+                        $.each(subcategories, function (i, subcategory) {
+                            $("#subcategoryDropdown").append('<option value="' + subcategory.Value + '">' + subcategory.Text + '</option>');
+                        });
+                    },
+                    error: function (ex) {
+                        alert('Subcategories retrieving fail.' + ex);
+                    }
+                });
+                return false;
+            });
+            $("#subcategoryDropdown").change(function () {
+                console.log("Subcategory dropdown changed");
+                var subcategoryId = $(this).val();
+                var url = '/Product/ProductsBySubCategory?subCategoryId=' + subcategoryId;
+                // Call the ProductsBySubCategory action to display products based on the selected subcategory
+                $.ajax({
+                    url: url,
+                    type: 'GET',
+                    dataType: 'html',
+                    success: function (result) {
+                        $('#dvUserdetails').html(result);
+                    }
+                });
+            });
+        });
+    </script>
+}
+

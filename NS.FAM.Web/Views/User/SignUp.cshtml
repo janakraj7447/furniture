@@ -1,0 +1,240 @@
+@model NS.FAM.Data.CustomEntities.UserViewModel
+@{
+    Layout = "_LayoutAddUser";
+}
+
+<style>
+    #Country,
+    #State,
+    #City {
+        display:block;
+        width: 51vw;
+        padding:5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    #btn-signup {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+</style>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+<h2 class="text-center mt-2">Create New Account</h2>
+
+@using (Html.BeginForm("AddUser", "User", FormMethod.Post, new { id = "formRegistration", enctype = "multipart/form-data" }))
+{
+   <div class="form-group">
+      <label for="First Name" class="col-md-3 control-label">First Name</label>
+      <div class="col-md-9">
+         @Html.HiddenFor(x=>x.Id)
+         @Html.TextBoxFor(x =>x.FirstName, "", new { @class = "form-control", placeholder = "Enter your First name here" })
+         @Html.ValidationMessageFor(x => x.FirstName,"",new{@class="text-danger"})
+      </div>
+   </div>
+   <br />
+
+   <div class="form-group">
+      <label for="Last Name" class="col-md-3 control-label">Last Name</label>
+      <div class="col-md-9">
+         @Html.TextBoxFor(x =>x.LastName, "", new { @class = "form-control", placeholder = "Enter your Last name here" })
+         @Html.ValidationMessageFor(x => x.LastName,"",new{@class="text-danger"})
+      </div>
+   </div>
+   <br />
+
+   <div class="form-group">
+        <label for="ProfilePic" class="col-md-3 control-label">ProfilePic</label>
+      <div class="col-md-9">
+            <input type="file" name="ProfilePic" id="imageInput" accept="image/*" onchange="previewImage()" />
+            <br />
+            <img id="imagePreview" src="#" alt="Preview" style="display: none; width: 200px; height:200px;">
+         @Html.ValidationMessageFor(x => x.ProfilePic,"",new{@class="text-danger"})
+      </div>
+   </div>
+   <br />
+
+   <div class="form-group">
+      <label for="age" class="col-md-3 control-label">Age</label>
+      <div class="col-md-9">
+         @Html.TextBoxFor(x => x.Age, "", new { @class = "form-control", placeholder = "Enter your Age" })
+         @Html.ValidationMessageFor(x => x.Age,"",new{@class="text-danger"})
+      </div>
+   </div>
+   <br />
+
+    <div class="form-group">
+        <label class="col-md-3 control-label">Gender</label>
+        <div class="col-md-9">
+            <label class="radio-inline">
+                @Html.RadioButtonFor(x => x.Gender, "Male") Male
+            </label>
+            <label class="radio-inline">
+                @Html.RadioButtonFor(x => x.Gender, "Female") Female
+            </label>
+            @Html.ValidationMessageFor(x => x.Gender, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <br/>
+
+   <div class="form-group">
+      <label for="address" class="col-md-3 control-label">Address</label>
+      <div class="col-md-9">
+         @Html.TextBoxFor(x => x.Address, new { @class = "form-control", placeholder = "Enter your address here" })
+         @Html.ValidationMessageFor(x => x.Address,"",new{@class="text-danger"})
+      </div>
+   </div>
+    <br />
+
+
+   <div class="form-group">
+      <label for="pincode" class="col-md-3 control-label">PinCode</label>
+      <div class="col-md-9">
+         @Html.TextBoxFor(x => x.PinCode, new { @class = "form-control", placeholder = "Enter your PinCode" })
+         @Html.ValidationMessageFor(x => x.PinCode,"",new{@class="text-danger"})
+      </div>
+   </div>
+   <br />
+
+   <div class="form-group">
+      <label for="phoneNo" class="col-md-3 control-label">Phone Number</label>
+      <div class="col-md-9">
+         @Html.TextBoxFor(x => x.PhoneNo, new { @class = "form-control", placeholder = "Enter your Phone Number"})
+
+         @Html.ValidationMessageFor(x => x.PhoneNo,"",new{@class="text-danger"})
+      </div>
+   </div>
+   <br />
+
+   <div class="form-group">
+      <label for="email" class="col-md-3 control-label">Email</label>
+      <div class="col-md-9">
+         @Html.TextBoxFor(x => x.Email, new { @class = "form-control", placeholder = "Enter your Email"})
+         @Html.ValidationMessageFor(x => x.Email,"",new{@class="text-danger"})
+      </div>
+   </div>
+   <br />
+
+   <div class="form-group">
+      <label for="password" class="col-md-3 control-label">Password</label>
+      <div class="col-md-9">
+         @Html.PasswordFor(x => x.Password , new { @class = "form-control", placeholder = "Enter your password" })
+         @Html.ValidationMessageFor(x => x.Password,"",new{@class="text-danger"} )
+      </div>
+   </div>
+    <br />
+
+    <div class="form-group">
+        <label for="password" class="col-md-3 control-label">Country</label>
+        <div class="col-md-9">
+            @Html.DropDownListFor(x => x.CountryId, ViewBag.Country as SelectList, "– Please Select a Country –", new { style = "", id = "Country" })
+            @Html.ValidationMessageFor(x => x.CountryId,"",new{@class="text-danger"} )
+        </div>
+    </div>
+    <br />
+
+    <div class="form-group">
+        <label for="password" class="col-md-3 control-label">State</label>
+        <div class="col-md-9">
+            @Html.DropDownListFor(x => x.StateId, new SelectList(string.Empty, "Value", "Text"), "– Please select a State –", new { style = "", @class = "dropdown1", id = "State" })
+            @Html.ValidationMessageFor(x => x.StateId,"",new{@class="text-danger"} )
+        </div>
+    </div>
+    <br />
+
+    <div class="form-group">
+        <label for="password" class="col-md-3 control-label">City</label>
+        <div class="col-md-9">
+            @Html.DropDownListFor(x => x.CityId, new SelectList(string.Empty, "Value", "Text"), "– Please select a city –", new { style = "", @class = "dropdown2", id = "City" })
+            @Html.ValidationMessageFor(x => x.CityId,"",new{@class="text-danger"} )
+        </div>
+    </div>
+    <br />
+
+
+   <div class="col-md-offset-3 col-md-9">
+      <button id="btn-signup" type="submit" >Submit</button>
+      <span style="margin-left:8px;"></span>
+   </div>
+    <script>
+        function previewImage() {
+            var input = document.getElementById('imageInput');
+            var preview = document.getElementById('imagePreview');
+
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    preview.src = e.target.result;
+                    preview.style.display = 'block';
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            } 
+            else {
+                preview.src = '#'; // Clear the preview image
+                preview.style.display = 'none';
+            }
+        }
+    </script>
+
+    <script src="~/Scripts/jquery-1.7.1.js"></script>
+    <script src="~/Scripts/jquery-1.7.1.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // This is Country Dropdown Selected change event
+            $("#Country").change(function () {
+                $("#State").empty();
+                $.ajax({
+                    type: 'GET',
+                    url: '@Url.Action("GetState")',
+                    dataType: 'json',
+                    data: { id: $("#Country").val() },
+                   
+                    success: function (states) {
+                        $("#State").append('<option value=  "" > Please Select State </option>');
+                        $.each(states, function (i, state) {
+                            $("#State").append('<option value="' + state.Value + '">' + state.Text + '</option>');
+                        });
+                    },
+                    error: function (ex) {
+                        alert('States retrieving fail.' + ex);
+                    }
+                });
+                return false;
+            });
+
+            $("#State").change(function () {
+                $("#City").empty();
+                $.ajax({
+                    type: 'GET',
+                    url: '@Url.Action("GetCity")',
+                    dataType: 'json',
+                    data: { id: $("#State").val() },
+                    success: function (cities) {
+                        $("#City").append('<option value=  "" > Please Select City </option>');
+                        $.each(cities, function (i, city) {
+                            $("#City").append('<option value="' + city.Value + '">' + city.Text + '</option>');
+                        });
+                    },
+                    error: function (ex) {
+                        alert('City retrieving fail.' + ex);
+                    }
+                });
+                return false;
+            });
+        });
+    </script>
+    
+
+
+
+
+}
+

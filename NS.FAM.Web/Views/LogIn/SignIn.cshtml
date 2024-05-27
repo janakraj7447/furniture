@@ -1,0 +1,97 @@
+@model NS.FAM.Data.CustomEntities.LoginViewModel;
+@{
+    Layout = null;
+}
+<style>
+    body {
+        background-color: #F2F2F2;
+        font-family: Arial, sans-serif;
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    form {
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        max-width: 500px;
+        margin: 50px auto;
+        padding: 30px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        font-size: 16px;
+        padding: 10px;
+        width: 100%;
+    }
+
+    button[type="submit"] {
+        background-color: black;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 10px;
+        width: 100%;
+    }
+
+    button[type="submit"]:hover {
+        background-color: black;
+    }
+</style>
+
+<h1>SignIn</h1>
+<div>
+    <span style="color:red; display:flex; justify-content:center;">@ViewData["Errormsg"]</span>
+    @using (Html.BeginForm("SignIn", "Login", FormMethod.Post))
+    {
+        <div class="form-group">
+            <label for="UserName" class="col-md-3 control-label">Email</label>
+            <div class="col-md-9">
+                @Html.TextBoxFor(x => x.Email, "", new { @class = "form-control", placeholder = "Enter your Email" })
+                @Html.ValidationMessageFor(x => x.Email, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <br />
+
+        <div class="form-group">
+            <label for="Password" class="col-md-3 control-label">Password</label>
+            <div class="col-md-9">
+                @Html.PasswordFor(x => x.Password, new { @class = "form-control", placeholder = "Enter your Password" })
+                @Html.ValidationMessageFor(x => x.Password, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <br />
+
+        <div>
+            <button type="submit">SignIn</button>
+        </div>
+
+        <a class="text-center pt-5" style="text-decoration:none;" asp-controller="User" asp-action="SignUp">
+            <h5 style="display: flex;
+    justify-content: center;
+    color: blue;
+    font-size: 16px;">
+                Do not have an acount? Sign Up
+            </h5>
+        </a>
+    }
+</div>

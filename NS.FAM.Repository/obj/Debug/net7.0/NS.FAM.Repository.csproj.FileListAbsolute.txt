@@ -1,0 +1,15 @@
+C:\Users\janak.raj\Desktop\furniture\NS.FAM.Repository\bin\Debug\net7.0\NS.FAM.Repository.deps.json
+C:\Users\janak.raj\Desktop\furniture\NS.FAM.Repository\bin\Debug\net7.0\NS.FAM.Repository.dll
+C:\Users\janak.raj\Desktop\furniture\NS.FAM.Repository\bin\Debug\net7.0\NS.FAM.Repository.pdb
+C:\Users\janak.raj\Desktop\furniture\NS.FAM.Repository\bin\Debug\net7.0\NS.FAM.Data.dll
+C:\Users\janak.raj\Desktop\furniture\NS.FAM.Repository\bin\Debug\net7.0\NS.FAM.Data.pdb
+C:\Users\janak.raj\Desktop\furniture\NS.FAM.Repository\obj\Debug\net7.0\NS.FAM.Repository.csproj.AssemblyReference.cache
+C:\Users\janak.raj\Desktop\furniture\NS.FAM.Repository\obj\Debug\net7.0\NS.FAM.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\janak.raj\Desktop\furniture\NS.FAM.Repository\obj\Debug\net7.0\NS.FAM.Repository.AssemblyInfoInputs.cache
+C:\Users\janak.raj\Desktop\furniture\NS.FAM.Repository\obj\Debug\net7.0\NS.FAM.Repository.AssemblyInfo.cs
+C:\Users\janak.raj\Desktop\furniture\NS.FAM.Repository\obj\Debug\net7.0\NS.FAM.Repository.csproj.CoreCompileInputs.cache
+C:\Users\janak.raj\Desktop\furniture\NS.FAM.Repository\obj\Debug\net7.0\NS.FAM.Repository.csproj.CopyComplete
+C:\Users\janak.raj\Desktop\furniture\NS.FAM.Repository\obj\Debug\net7.0\NS.FAM.Repository.dll
+C:\Users\janak.raj\Desktop\furniture\NS.FAM.Repository\obj\Debug\net7.0\refint\NS.FAM.Repository.dll
+C:\Users\janak.raj\Desktop\furniture\NS.FAM.Repository\obj\Debug\net7.0\NS.FAM.Repository.pdb
+C:\Users\janak.raj\Desktop\furniture\NS.FAM.Repository\obj\Debug\net7.0\ref\NS.FAM.Repository.dll

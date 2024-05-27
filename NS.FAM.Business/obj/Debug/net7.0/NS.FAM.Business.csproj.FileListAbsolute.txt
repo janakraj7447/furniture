@@ -1,0 +1,17 @@
+C:\Users\janak.raj\Desktop\furniture\NS.FAM.Business\bin\Debug\net7.0\NS.FAM.Business.deps.json
+C:\Users\janak.raj\Desktop\furniture\NS.FAM.Business\bin\Debug\net7.0\NS.FAM.Business.dll
+C:\Users\janak.raj\Desktop\furniture\NS.FAM.Business\bin\Debug\net7.0\NS.FAM.Business.pdb
+C:\Users\janak.raj\Desktop\furniture\NS.FAM.Business\bin\Debug\net7.0\NS.FAM.Data.dll
+C:\Users\janak.raj\Desktop\furniture\NS.FAM.Business\bin\Debug\net7.0\NS.FAM.Repository.dll
+C:\Users\janak.raj\Desktop\furniture\NS.FAM.Business\bin\Debug\net7.0\NS.FAM.Repository.pdb
+C:\Users\janak.raj\Desktop\furniture\NS.FAM.Business\bin\Debug\net7.0\NS.FAM.Data.pdb
+C:\Users\janak.raj\Desktop\furniture\NS.FAM.Business\obj\Debug\net7.0\NS.FAM.Business.csproj.AssemblyReference.cache
+C:\Users\janak.raj\Desktop\furniture\NS.FAM.Business\obj\Debug\net7.0\NS.FAM.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\janak.raj\Desktop\furniture\NS.FAM.Business\obj\Debug\net7.0\NS.FAM.Business.AssemblyInfoInputs.cache
+C:\Users\janak.raj\Desktop\furniture\NS.FAM.Business\obj\Debug\net7.0\NS.FAM.Business.AssemblyInfo.cs
+C:\Users\janak.raj\Desktop\furniture\NS.FAM.Business\obj\Debug\net7.0\NS.FAM.Business.csproj.CoreCompileInputs.cache
+C:\Users\janak.raj\Desktop\furniture\NS.FAM.Business\obj\Debug\net7.0\NS.FAM.Business.csproj.CopyComplete
+C:\Users\janak.raj\Desktop\furniture\NS.FAM.Business\obj\Debug\net7.0\NS.FAM.Business.dll
+C:\Users\janak.raj\Desktop\furniture\NS.FAM.Business\obj\Debug\net7.0\refint\NS.FAM.Business.dll
+C:\Users\janak.raj\Desktop\furniture\NS.FAM.Business\obj\Debug\net7.0\NS.FAM.Business.pdb
+C:\Users\janak.raj\Desktop\furniture\NS.FAM.Business\obj\Debug\net7.0\ref\NS.FAM.Business.dll

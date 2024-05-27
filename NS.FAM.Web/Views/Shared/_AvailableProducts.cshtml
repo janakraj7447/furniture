@@ -1,0 +1,81 @@
+﻿@model List<NS.FAM.Data.Entities.Products>
+<style>
+ *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-card {
+    background-color: #fff;
+    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 250px;
+}
+
+.product-card:hover
+{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px black;
+    transition:all;
+    transition-duration: 1.2s;
+
+}
+.product-card img {
+     max-height: 140px;
+     overflow: hidden;
+} 
+
+.product-card h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.product-card p {
+    height:30px;
+    color: #555;
+    font-size: 0.9em;
+}
+
+.add-to-cart {
+    margin-top: 10px;
+}
+
+</style>
+<div class="product-grid">
+    @if (Model != null)
+    {
+        @foreach (var prod in Model.Where(x => x.IsActive == true && !x.IsDeleted))
+        {
+            <div class="product-card">
+                <div >
+                   <img src="~/UploadProduct/@prod.Photo" alt="NO IMAGE FOUND" style="width: 220px; height: 290px;" />
+                </div>    
+                <h3>@prod.Name</h3>
+                <p>Price: Rs. @prod.Price</p>
+              
+                   <p>@prod.Description</p>
+                           
+                <div class="add-to-cart">
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        @Html.ActionLink("Add To Cart", "AddProductInCart", "Product", new { Id = prod.Id }, new { @class = "btn btn-danger", onclick = "return confirm('Do you want to add this product to the cart')" })
+                    }
+                    else
+                    {
+                        @Html.ActionLink("Add To Cart", "SignIn", "Login", "", new { @class = "btn btn-primary", onclick = "return confirm('Please login first to add the product to the cart')" })
+                    }
+                </div>
+            </div>
+        }
+    }
+</div>
